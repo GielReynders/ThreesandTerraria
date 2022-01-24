@@ -1,0 +1,14 @@
+FROM ubuntu:21.04
+RUN apt-get update
+RUN apt-get -y install mono-complete
+COPY Linux /app/linux
+# COPY tModLoader-Linux /app/tModLoader-Linux
+COPY tModLoader-Linux-alpha /app/tModLoader-Linux-alpha
+COPY startup.sh /app
+COPY serverconfig.txt /app/serverconfig.txt
+COPY mods .local/share/Terraria/ModLoader/Mods
+RUN chmod +x /app/startup.sh
+RUN chmod +x /app/tModLoader-Linux-alpha/start-tModLoader.sh
+RUN chmod +x /app/linux/tModLoaderServer
+RUN chmod +x /app/linux/tModLoaderServer.bin.x86
+ENTRYPOINT ["/app/startup.sh"]

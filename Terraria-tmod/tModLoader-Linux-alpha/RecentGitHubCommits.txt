@@ -1,0 +1,10 @@
+ee7e1db52f1c20d9ef1f3c693e7f270176577168 Fix rarity count bleeding (#1831) and fix line breaks in ItemRarityID docs. (#2108)
+08b6af5f5ad6d0010a7e1b6d361c187348d574e0 Remove abstract modifier from Mod. Fixes #1713
+2b732e616f35c5f0eb70a0a9fcaaf0afa29b6ec8 1.4 mod map layer (#2098)
+1c0ed46d148853c54deddb8d57ce6f15f71d26b3 Update tModLoader.json (#2101)
+14d1ff8a038cecb6bbb221bf6d6a631987e17fc4 [1.4] `BiomeID` improvements (#2105)
+ade43686537dcbb0fd0af19a3ad0a91e23db68a0 EM: More on unloading.
+0c1d3acf05e3b5e8fed6e9f4733a710654148add An explanation for Mod.Unload() & -1 line from it.
+5bc78bbc6b556ad947bea08d00c60cb4ce70186e EM: Split HandlePacket into a partial.
+a8f667f8a7d9d94d7477f9fc9005bac37788818b Updated editorconfig in EM.
+2bbc9414045bb6b539b53ee81e9960b4121c8638 [1.4] EM Mod.Call (#2100)

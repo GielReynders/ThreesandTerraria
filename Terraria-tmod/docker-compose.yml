@@ -1,0 +1,13 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  terraria:
+    build: .
+    image: terraria-tmod
+    container_name: terraria-Tmod
+    ports:
+      - "7778:7777"
+    volumes:
+      - '${TERRARIA_SAVE_LOCATION}:/app/worlds:rw'
+    stdin_open: true
+    tty: true
+    # restart: unless-stopped
